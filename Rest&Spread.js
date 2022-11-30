@@ -1,7 +1,7 @@
 //ES6
 // example Rest
 function addNumbers(a,b,c,...other){
-console.log(other)
+console.log(other)// we can get the "rest" of the parameter as an array using rest
 return a+b+c;
 }
 const res=addNumbers(2,5,6,8,9,7,8,9)
@@ -29,7 +29,7 @@ const {age,...rest} =students;
 console.log(rest)
 //Spread
 var newStudent={
-    ...students,
+    ...students,//we can "spread"/use all the existing value of students in newStudent but also can change values.
     age: "29"
 }
 console.log(newStudent)
